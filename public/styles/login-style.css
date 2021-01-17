@@ -1,0 +1,58 @@
+body{
+    background: url("../images/login-bgimg.jpg");
+}
+
+form {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    margin: 15% auto;
+    padding: 5px;
+    background: #c8c8c8;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px 3px rgba(255,255,255,1);
+}
+
+h1{
+    text-align: center;
+    padding-top: 15px;
+    color: #4d4d4d;
+    font-size: 25px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+span {
+    width: 100%;
+    padding: 3px 5px;
+    margin: 2px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #323232;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+div {
+    padding: 10px;
+}

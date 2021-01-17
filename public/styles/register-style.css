@@ -1,0 +1,61 @@
+body{
+    background: url("../images/register-bgimg.jpg");
+    background-size: 125%;
+    background-position-x: 200px;
+    background-position-y: -50px;
+}
+
+form {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px;
+    background: #afafaf;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 5px 5px 12px 3px rgba(0,0,0,0.5);
+}
+
+h1{
+    text-align: center;
+    padding-top: 15px;
+    color: #f0f0f0;
+    font-size: 25px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+span {
+    width: 100%;
+    padding: 3px 5px;
+    margin: 2px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #323232;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+div {
+    padding: 10px;
+}
