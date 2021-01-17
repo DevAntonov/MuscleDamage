@@ -17,7 +17,8 @@ require_once(__ROOT__.'/server/register-form-validation.php')
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MuscleDamage - Register page</title>
-        <link rel="stylesheet" href="styles/register-style.css">
+        <link rel="stylesheet" href="styles/register-style.css" type="text/css">
+        <link rel="stylesheet" href="styles/media-queries.css" type="text/css">
     </head>
 
     <body>

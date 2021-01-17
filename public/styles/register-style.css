@@ -1,3 +1,5 @@
+* {margin: 0; padding: 0;}
+
 body{
     background: url("../images/register-bgimg.jpg");
     background-size: 125%;
@@ -10,7 +12,6 @@ form {
     height: 500px;
     position: relative;
     margin: 10% auto;
-    padding: 5px;
     background: #afafaf;
     overflow: hidden;
     border-radius: 3px;

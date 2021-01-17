@@ -26,7 +26,8 @@ require_once(__ROOT__.'/server/login-form-validation.php')
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MuscleDamage - Login Page</title>
-        <link rel="stylesheet" href="styles/login-style.css">
+        <link rel="stylesheet" href="styles/login-style.css" type="text/css">
+        <link rel="stylesheet" href="styles/media-queries.css" type="text/css">
     </head>
 
     <body>
