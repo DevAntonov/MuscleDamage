@@ -22,7 +22,7 @@ require_once(__ROOT__.'/server/register-form-validation.php')
     </head>
 
     <body>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form class="log-reg-forms" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <h1>Sign Up</h1>
             <div class="input">
                 <input placeholder="Email" type="text" name="email" value="<?php echo $email; ?>">

@@ -4,7 +4,7 @@ session_start();
 
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: welcome.php");
+    header("location: main-page.php");
     exit;
 }
 
@@ -33,7 +33,7 @@ require_once(__ROOT__.'/server/login-form-validation.php')
     <body>
         <div>
 
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <form class="log-reg-forms" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <h1>Login</h1>
                 <div class="input">
                     <input placeholder="Enter username" type="text" name="username" value="<?php echo $username; ?>">
