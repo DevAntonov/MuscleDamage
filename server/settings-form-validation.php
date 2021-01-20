@@ -60,7 +60,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check input errors before updating database
     if(empty($email_err) && empty($username_err) && empty($password_err) && empty($confirm_password_err)){
 
-        // Prepare an select statement
+        // Prepare an update statement
         $sql = "UPDATE users_info SET password = ? WHERE id= ?";
         if($stmt = $db->prepare($sql)){
             $stmt->bind_param("ss", $password_param, $id_param);

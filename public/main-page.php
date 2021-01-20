@@ -7,6 +7,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login-page.php");
     exit;
 }
+
+define('__ROOT__', dirname(dirname(__FILE__)));
+require_once(__ROOT__.'/server/db_connection.php');
+require_once(__ROOT__.'/server/exercise-pick-script.php');
+require_once(__ROOT__.'/server/exercise-points-script.php');
+require_once(__ROOT__.'/server/retrieve_points.php');
 ?>
 
 <!DOCTYPE html>
@@ -30,17 +36,20 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </header>
         <main class="main">
             <section class="exercise">
-                <div class="exercise-pick">
-
-                </div>
-                <div class="exercise-status">
-
-                </div>
+                <form class="exercise-pick" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get">
+                    <input type="submit" name="pick-button" value="PICK">
+                    <span><?php echo $exercise; ?></span>
+                </form>
+                <form class="exercise-status" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <span>Is exercise done?</span>
+                    <input type="submit" name="status-button" value="Yes">
+                    <input type="submit" name="status-button" value="No">
+                </form>
             </section>
             <aside class="exercise-history">
             </aside>
             <aside class="exercise-stats">
-
+                <span><?php echo $points; ?></span>
             </aside>
         </main>
         <footer>

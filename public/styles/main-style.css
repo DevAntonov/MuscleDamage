@@ -78,8 +78,20 @@ nav a:hover{
     box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
 }
 
-.exercise div {
+.exercise-pick {
+    height: 70%;
+    margin: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.2);
+    background-color: #fafafa;
+}
 
+.exercise-status {
+    height: 10%;
+    margin: 20px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.2);
+    background-color: #fafafa;
 }
 
 .exercise-history{
