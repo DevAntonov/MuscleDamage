@@ -26,7 +26,7 @@ require_once(__ROOT__.'/server/retrieve_points.php');
     </head>
     <body>
         <header>
-            <h1 class="main-h1">MuscleDamage</h1>
+            <h1 class="main-h1">MuscleDamage - Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?>!</h1>
             <nav>
                 <ul class="navlinks-main">
                     <li><a href="settings-page.php">Settings</a></li>
@@ -36,11 +36,11 @@ require_once(__ROOT__.'/server/retrieve_points.php');
         </header>
         <main class="main">
             <section class="exercise">
-                <form class="exercise-pick" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get">
+                <form class="exercise-pick" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                     <input type="submit" name="pick-button" value="PICK">
                     <span><?php echo $exercise; ?></span>
                 </form>
-                <form class="exercise-status" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <form class="exercise-status" action="exercise_status()" method="get">
                     <span>Is exercise done?</span>
                     <input type="submit" name="status-button" value="Yes">
                     <input type="submit" name="status-button" value="No">

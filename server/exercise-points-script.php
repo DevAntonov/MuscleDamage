@@ -1,7 +1,7 @@
 <?php
 
-function exercise_status($points_param){
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
+function exercise_status(){
+    if($_SERVER["REQUEST_METHOD"] == "GET") {
 
         $points = 0;
 
@@ -74,3 +74,4 @@ function exercise_status($points_param){
         }
     }
 }
+
